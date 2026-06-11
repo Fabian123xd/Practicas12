@@ -5,6 +5,7 @@ import Inicio    from './pages/Inicio'
 import Cursos    from './pages/Cursos'
 import DetalleCurso from './pages/DetalleCurso'
 import Registro  from './pages/Registro'
+import './App.css'
 
 function App() {
   return (
@@ -22,10 +23,14 @@ function App() {
           {/* Ruta comodín: si ninguna coincide, mostrar página de inicio */}
           <Route path="*"         element={<Inicio />} />
         </Routes>
+          
       </div>
+      
+      <footer className="app-footer text-center">
+        <p className="mb-0">© 2026 Portal de Cursos xd</p>
+      </footer>
     </>
   )
 }
-
 export default App
 
